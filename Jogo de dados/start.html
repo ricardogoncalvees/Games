@@ -1,0 +1,25 @@
+ <script>
+	
+	function rodar(){
+		
+		var rand = Math.floor(Math.random() * 7);
+				
+		
+		if(rand != 0){
+		
+		document.getElementById('imagem').src = 'img/'+ rand + '.gif';
+			
+		}
+		
+	}
+	
+	
+ 
+ </script>
+ <center>
+ <br><br><input type='button' onclick='rodar()' value='JOGAR DADOS'/><br><br>
+ 
+ <img id='imagem' /> <img id='imagem2' /> <img id='imagem3' />
+
+ 
+ 
