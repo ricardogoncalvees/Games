@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogar Dados</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function rodar() {
+            var rand = Math.floor(Math.random() * 7);
+            var rand2 = Math.floor(Math.random() * 7);
+            var rand3 = Math.floor(Math.random() * 7);
+
+            if (rand != 0 && rand2 != 0 && rand3 != 0) {
+                document.getElementById('imagem').src = 'img/' + rand + '.gif';
+                document.getElementById('imagem2').src = 'img/' + rand2 + '.gif';
+                document.getElementById('imagem3').src = 'img/' + rand3 + '.gif';
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container text-center mt-5">
+    <h1>Jogar Dados</h1>
+    <br>
+    <button class="btn btn-primary" onclick="rodar()">JOGAR DADOS</button>
+    <br><br>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <img id="imagem" class="img-fluid" />
+        </div>
+        <div class="col-4">
+            <img id="imagem2" class="img-fluid" />
+        </div>
+        <div class="col-4">
+            <img id="imagem3" class="img-fluid" />
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
